@@ -39,23 +39,23 @@ navigator.geolocation.getCurrentPosition(async function (position) {
         let weatherCondition = data.list[0].weather[0].main.toLowerCase();
 
         if (weatherCondition === "rain") {
-            weatherImg.src = "img/rain.png";
-            weatherImgs.src = "img/rain.png";
+            weatherImg.src = "rain.png";
+            weatherImgs.src = "rain.png";
         } else if (weatherCondition === "clear" || weatherCondition === "clear sky") {
-            weatherImg.src = "img/sun.png";
-            weatherImgs.src = "img/sun.png";
+            weatherImg.src = "sun.png";
+            weatherImgs.src = "sun.png";
         } else if (weatherCondition === "snow") {
-            weatherImg.src = "img/snow.png";
-            weatherImgs.src = "img/snow.png";
+            weatherImg.src = "snow.png";
+            weatherImgs.src = "snow.png";
         } else if (weatherCondition === "clouds" || weatherCondition === "smoke") {
-            weatherImg.src = "img/cloud.png";
-            weatherImgs.src = "img/cloud.png";
+            weatherImg.src = "cloud.png";
+            weatherImgs.src = "cloud.png";
         } else if (weatherCondition === "mist" || weatherCondition === "Fog") {
-            weatherImg.src = "img/mist.png";
-            weatherImgs.src = "img/mist.png";
+            weatherImg.src = "mist.png";
+            weatherImgs.src = "mist.png";
         } else if (weatherCondition === "haze") {
-            weatherImg.src = "img/haze.png"  ;
-            weatherImgs.src = "img/haze.png";
+            weatherImg.src = "haze.png"  ;
+            weatherImgs.src = "haze.png";
         }
 
         // Fetch and display 5-day forecast data
@@ -96,27 +96,27 @@ navigator.geolocation.getCurrentPosition(async function (position) {
 
                 switch (dailyForecasts[date].weatherImg) {
                     case "rain":
-                        imgSrc = "img/rain.png";
+                        imgSrc = "rain.png";
                         break;
                     case "clear":
                     case "clear sky":
-                        imgSrc = "img/sun.png";9
+                        imgSrc = "sun.png";9
                         break;
                     case "snow":
-                        imgSrc = "img/snow.png";
+                        imgSrc = "snow.png";
                         break;
                     case "clouds":
                     case "smoke":
-                        imgSrc = "img/cloud.png";
+                        imgSrc = "cloud.png";
                         break;
                     case "mist":
-                        imgSrc = "img/mist.png";
+                        imgSrc = "mist.png";
                         break;
                     case "haze":
-                        imgSrc = "img/haze.png";
+                        imgSrc = "haze.png";
                         break;
                     default:
-                        imgSrc = "img/sun.png";
+                        imgSrc = "sun.png";
                 }
 
                 forecastbox += `
